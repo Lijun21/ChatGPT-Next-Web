@@ -15,7 +15,8 @@ const en: LocaleType = {
   Auth: {
     Title: "Need Access Code",
     Tips: "Please enter access code below",
-    SubTips: "Or enter your OpenAI or Google API Key",
+    // SubTips: "Or enter your OpenAI or Google API Key",
+    SubTips: " ",
     Input: "access code",
     Confirm: "Confirm",
     Later: "Later",

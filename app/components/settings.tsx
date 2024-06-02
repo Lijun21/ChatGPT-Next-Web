@@ -728,7 +728,7 @@ export function Settings() {
             )}
           </ListItem>
 
-          <ListItem title={Locale.Settings.SendKey}>
+          {/* <ListItem title={Locale.Settings.SendKey}>
             <Select
               value={config.submitKey}
               onChange={(e) => {
@@ -744,7 +744,7 @@ export function Settings() {
                 </option>
               ))}
             </Select>
-          </ListItem>
+          </ListItem> */}
 
           <ListItem title={Locale.Settings.Theme}>
             <Select
@@ -830,9 +830,9 @@ export function Settings() {
           </ListItem>
         </List>
 
-        <SyncItems />
+        {/* <SyncItems /> */}
 
-        <List>
+        {/* <List>
           <ListItem
             title={Locale.Settings.Mask.Splash.Title}
             subTitle={Locale.Settings.Mask.Splash.SubTitle}
@@ -865,7 +865,7 @@ export function Settings() {
               }
             ></input>
           </ListItem>
-        </List>
+        </List> */}
 
         <List>
           <ListItem
@@ -1192,7 +1192,7 @@ export function Settings() {
             </>
           )}
 
-          {!shouldHideBalanceQuery && !clientConfig?.isApp ? (
+          {/* {!shouldHideBalanceQuery && !clientConfig?.isApp ? (
             <ListItem
               title={Locale.Settings.Usage.Title}
               subTitle={
@@ -1216,9 +1216,9 @@ export function Settings() {
                 />
               )}
             </ListItem>
-          ) : null}
+          ) : null} */}
 
-          <ListItem
+          {/* <ListItem
             title={Locale.Settings.Access.CustomModel.Title}
             subTitle={Locale.Settings.Access.CustomModel.SubTitle}
           >
@@ -1232,10 +1232,10 @@ export function Settings() {
                 )
               }
             ></input>
-          </ListItem>
+          </ListItem> */}
         </List>
 
-        <List>
+        {/* <List>
           <ModelConfigList
             modelConfig={config.modelConfig}
             updateConfig={(updater) => {
@@ -1244,7 +1244,7 @@ export function Settings() {
               config.update((config) => (config.modelConfig = modelConfig));
             }}
           />
-        </List>
+        </List> */}
 
         {shouldShowPromptModal && (
           <UserPromptModal onClose={() => setShowPromptModal(false)} />
