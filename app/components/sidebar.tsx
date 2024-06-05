@@ -225,12 +225,13 @@ export function SideBar(props: { className?: string }) {
             icon={<AddIcon />}
             text={shouldNarrow ? undefined : Locale.Home.NewChat}
             onClick={() => {
-              if (config.dontShowMaskSplashScreen) {
-                chatStore.newSession();
-                navigate(Path.Chat);
-              } else {
-                navigate(Path.NewChat);
-              }
+              navigate(Path.Chat);
+              // if (config.dontShowMaskSplashScreen) {
+              //   chatStore.newSession();
+              //   navigate(Path.Chat);
+              // } else {
+              //   navigate(Path.NewChat);
+              // }
             }}
             shadow
           />
