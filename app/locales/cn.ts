@@ -13,7 +13,8 @@ const cn = {
   },
   Auth: {
     Title: "需要密码",
-    Tips: "管理员开启了密码验证，请在下方填入访问码",
+    // Tips: "管理员开启了密码验证，请在下方填入访问码",
+    Tips: "请添加管理员微信：junjunzai258, 以获取访问码，然后填入下方",
     // SubTips: "或者输入你的 OpenAI 或 Google API 密钥",
     SubTips: " ",
     Input: "在此处填写访问码",
